@@ -46,7 +46,7 @@ const products = [
 
 console.log(ourProducts(products));
 
-
+//3
 const grades = {
   Mizer: [56, 89, 92],
   Selam: [65, 75, 80],
@@ -65,7 +65,7 @@ function results(grades) {
 results(grades);
 
 
-//3
+//4
 
 function User(username, email, isActive) {
   this.username = username;
@@ -103,17 +103,17 @@ const destinations = [
   { name: "Shire", distance: 345, budgetRequired: 345 }
 ];
 function passengerDestinations(maximumDistance, maximumBudget) {
-  let result = [];
+  let meetedRequirements= [];
 
 
   destinations.forEach(destination => {
     if (destination.distance <= maximumDistance && destination.budgetRequired <= maximumBudget) {
-      result.push(destination.name);
+      meetedRequirements.push(destination.name);
     }
   });
 
 
-  return result.length > 0 ? result : "No destinations available under your budget and distance";
+  return meetedRequirements.length > 0 ? meetedRequirements : "No destinations available under your budget and distance";
 }
 
 
